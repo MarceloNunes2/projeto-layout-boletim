@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Planilha De Notas</title>
+    <style>
+        body{
+            margin: 1px;
+            padding: 1px;
+            background-image: url(imagens/fundo.jpg);
+            background-size: cover;;
+            background-attachment: fixed;
+        }
+        table {
+            width: 600px;
+            height: 120px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            border: 2px solid black;
+            margin-bottom: 2px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: bisque;
+        }
+        div{
+            border: 2px solid black;
+            width: 596px;
+            margin-bottom: 1px;
+        }
+
+        table th {
+            border: 2px solid black;
+        }
+        .nome{
+            margin-left: 2px;
+            padding-left: 2px;
+            margin-bottom: 4px;
+
+        }
+        .data{
+            margin-left: 5px;
+        }
+        table thead {
+            background-image: linear-gradient(to bottom, #0fcbfab6, rgba(120, 120, 146, 0.808));
+        }
+
+        table td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        tfoot {
+            border: 2px solid beige;
+        }
+
+        tfoot {
+            background-image: linear-gradient(to bottom, #0fcbfab6, rgba(120, 120, 146, 0.808));
+        }
+        th,td{
+            background-color: rgb(168, 165, 165);
+        }
+        
+        .mdex,.mdhu{
+            text-align:left;
+            background-image: linear-gradient(to bottom, #0fcbfab6, rgba(120, 120, 146, 0.808));
+        }
+        div{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    <strong><span>Nome:</span></strong>
+    <input type="text" class="nome">
+    <strong><span>Data:</span></strong>
+    <input type="date" name="" id="" class="data">
+    </div>
+    
+    <div>
+        <table>
+            <caption>Boletim</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col">Área</th>
+                    <th rowspan="2" scope="col">Disiplinas</th>
+                    <th colspan="2" scope="colgroup">Notas</th>
+                    <th rowspan="2" scope="col">Media</th>
+                </tr>
+                <tr>
+                    <th scope="rowgroup">Notas 1</th>
+                    <th scope="rowgroup">Notas 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4" scope="rowgroup">Exatas</th>
+                    <td>Matemática</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <th colspan="4" class="mdex" scope="row">Media de Exatas</th>
+                <td class="mdex">0,0</td>
+                </th>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Humanas</th>
+                    <td>Historias</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Português</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <th colspan="4" class="mdhu" scope="row">Media de Humanas</th>
+                <td class="mdhu">0,0</td>
+                </th>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5"><strong>Assinatura do Responsável:</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
+</body>
+
+</html>
